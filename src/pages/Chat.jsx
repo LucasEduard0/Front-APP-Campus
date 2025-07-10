@@ -220,20 +220,34 @@ export default function Chat() {
   // Lista de conversas
   if (!chatAtivo) {
     return (
-      <div className="bg-white min-h-screen pb-20">
-        {/* Header */}
-        <div className="bg-primary text-white p-4 sticky top-0 z-10">
-          <h1 className="text-xl font-bold">Conversas</h1>
-          <p className="text-sm opacity-90">Campus Party Chat</p>
+      <div className="bg-gray-50 min-h-screen pb-20">
+        {/* Header com botão Nova conversa */}
+        <div className="bg-white sticky top-0 z-10 border-b border-gray-200 px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-xl font-bold">Conversas</h1>
+              <p className="text-sm text-gray-600">Conecte-se com outros campuseiros</p>
+            </div>
+            <button
+              onClick={() => {
+                // Aqui você pode adicionar lógica para criar nova conversa
+                alert('Funcionalidade em desenvolvimento!');
+              }}
+              className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600 transition-colors flex items-center gap-2"
+            >
+              <span className="text-lg">+</span>
+              Nova conversa
+            </button>
+          </div>
         </div>
 
         {/* Lista de chats */}
-        <div className="divide-y divide-gray-100">
+        <div className="divide-y divide-gray-100 bg-white mx-4 mt-4 rounded-xl shadow-sm">
           {chats.map((chat) => (
             <div
               key={chat.id}
               onClick={() => setChatAtivo(chat)}
-              className="flex items-center p-4 hover:bg-gray-50 cursor-pointer active:bg-gray-100"
+              className="flex items-center p-4 hover:bg-gray-50 cursor-pointer active:bg-gray-100 first:rounded-t-xl last:rounded-b-xl"
             >
               {/* Avatar */}
               <div className="relative mr-3">

@@ -287,11 +287,10 @@ export const mockChats = [
     id: 1,
     tipo: 'privado',
     nome: 'Ana Silva',
-    avatar: 'https://unsplash.com/pt-br/fotografias/uma-fotografia-de-retrato-mostra-uma-pessoa-com-dupla-exposicao-W_rtUkr9Kgk',
-    ultimaMensagem: 'Áudio',
-    tempo: '10:30',
-    naoLidas: 2,
+    avatar: 'https://images.unsplash.com/photo-1751768785340-acd17b0331a0?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     online: true,
+    ultimaMensagem: 'Ana: 🎤 Audio 0:15',
+    naoLidas: 2,
     mensagens: [
       {
         id: 1,
